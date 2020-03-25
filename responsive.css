@@ -1,0 +1,47 @@
+/* 
+  ##Device = Macbook 13inch
+*/
+@media  only screen and (max-width: 1440px) {
+	
+
+	
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+*/
+@media only screen and (max-width:800px) and (orientation: portrait){
+
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  
+*/
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  		
+}
+
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles 
+*/
+@media only screen and (max-width: 767px) {
+  	
+
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles 
+*/
+@media only screen and (max-width: 480px) {
+	
+	
+}

@@ -7,22 +7,38 @@ body,html{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.hide-desktop{display: none;}
+.hide{display: none;}
+.show{display: inherit;}
+.text-left{text-align:left;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
 
-.text-left{
-	text-align:left;
-}
-
-
-.text-center{
-	text-align:center;
-}
-
-
-.text-right{
-	text-align:right;
-}
 
 .wrapper{
 	width: 80%;
 	margin: 0 auto;
+}
+
+
+#mobile-header-action{
+	background: green;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+#mobile-header-menu{
+	background: blue;
+}
+
+#mobile-header-action .logo,
+#mobile-header-action .burger
+{
+	width: 50%;
+	vertical-align: middle;
+	display: inline-block
+}
+
+#mobile-header-action .burger .menu-button i{
+	cursor: pointer;
 }

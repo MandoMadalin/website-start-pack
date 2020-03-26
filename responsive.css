@@ -13,7 +13,9 @@
   ##Device = Tablets, Ipads (portrait)
 */
 @media only screen and (max-width:800px) and (orientation: portrait){
-
+	.hide-desktop{
+		display: inherit;
+	}
 }
 
 

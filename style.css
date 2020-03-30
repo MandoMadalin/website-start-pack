@@ -8,6 +8,9 @@ body,html{
 }
 
 .hide-desktop{display: none;}
+.hide-mobile{display: inherit;}
+.hide-tablet{display: inherit;}
+
 .hide{display: none;}
 .show{display: inherit;}
 .text-left{text-align:left;}

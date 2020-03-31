@@ -18,6 +18,28 @@ $(document).ready(function(){
 	
 	
 });
+
+
+
+$(window).on('resize scroll', function() {
+			
+	if($("#your-element").isInViewport()) {
+		//do smth	
+	}
+
+});
+
+$.fn.isInViewport = function() {
+	var elementTop = $(this).offset().top;
+	var elementBottom = elementTop + $(this).outerHeight();
+	
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	
+	return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+
 function validateEmail(email) {
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);

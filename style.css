@@ -52,3 +52,25 @@ body,html{
 #mobile-header-action .burger .menu-button i{
 	cursor: pointer;
 }
+
+
+
+.input.ckb{display:block;position:relative;padding-left:30px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.input.ckb input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}
+.input.ckb .checkmark{position:absolute;top:0;left:0;height:20px;width:20px;background-color:#eee}
+.input.ckb:hover input~.checkmark{background-color:#ccc}
+.input.ckb input:checked~.checkmark{background-color:#b6d857}
+.checkmark:after{content:"";position:absolute;display:none}
+.input.ckb input:checked~.checkmark:after{display:block}
+.input.ckb .checkmark:after{left:7px;top:2px;width:3px;height:10px;border:solid #fff;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+
+
+/* customcheckbox example
+<label class="input ckb">
+	Checkbox
+	<input type="checkbox" name="" id="ckb1"> 
+	<span class="checkmark"></span>
+</label>
+*/
+
+

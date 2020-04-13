@@ -54,6 +54,9 @@ body,html{
 }
 
 
+input{
+	-webkit-appearance: none;	
+}
 
 .input.ckb{display:block;position:relative;padding-left:30px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .input.ckb input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}

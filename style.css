@@ -91,6 +91,33 @@ select {
 
 /*
 wordpress checkbox
+
+<label class="input ckb">[acceptance acceptance-58] <b>Sunt de acord</b> — Prin trimiterea datelor dumneavoastră, ne acordați permisiunea de a stoca și prelucra datele dumneavoastră conform <a href="">Politicii de confidențialitate.</a> [/acceptance]</label>
+
+
+.wpcf7-list-item,
+.input.ckb{
+	margin: 0;
+	padding: 0;
+}
+.wpcf7-list-item label{
+	
+	position: relative;
+	display: block;
+}
+.wpcf7-list-item-label{
+	color: #fff;
+	font-family: "Rubik", Sans-serif;
+	white-space: normal;
+	display: block;
+	margin-left: 30px;
+}
+
+.wpcf7-list-item-label a{
+	color: #fff;
+	text-decoration: underline;
+}
+
 add this to jquery script
 $(".form-group .wpcf7-list-item label").append('<span class="checkmark"></span>');
 
